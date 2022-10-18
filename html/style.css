@@ -7,13 +7,12 @@ body {
 }
 .container {
     position: absolute;
-    left: 50%;
+    right: 5%;
     bottom: 40px;
-    transform: translateX(-50%);
-    width: 375px;
-    height: 210px;
+    width: 575px;
+    height: 310px;
     border-radius: 20px;
-    background-color: #1e1e1eeb;
+    background-color: #002a54;
     border: 2px solid #c4c4c4;
 }
 .content {
@@ -41,8 +40,70 @@ body {
     margin: auto;
     border-radius: 10px;
 }
-img {
-    width: 50px;
-    height: 50px;
+
+
+
+
+.car-img {
+    position: absolute;
+    right: 2%;
+    bottom: 2%;
+    width: 350px;
+    height: auto;
+    transform: rotate(180deg);
+
+}
+.car-img img {
+    width: 350px;
+    height: auto;
     align-self: center;
+}
+.door-control {
+    position: absolute;
+    right: 2%;
+    bottom: 0%;
+    width: 350px;
+    height: 180px;
+    z-index: 99;
+    
+}
+.door {
+    position: absolute;
+    left: 150px;
+    width: 250px;
+    bottom: 100px;
+}
+.door li {
+    list-style-type: none;
+    color: rgba(240, 255, 255, 0.418);
+    display: inline-block;
+    font-size: 25px;
+    
+}
+.door li i {
+    cursor: pointer;
+}
+.door li i:hover {
+    color: rgba(240, 255, 255, 1);
+    text-shadow: 0px 0px 20px #f2ff40;
+}
+.door-control .left li {
+    margin: 30px;
+    margin-top: 0%;
+}
+.door-control .right li {
+    position: absolute;
+    top :50px;
+    z-index: 99;
+    left: 30px;
+}
+.door-control .right li:nth-child(2){
+    left: 120px;
+}
+.fron-back li {
+    position: absolute;
+    right: 50px;
+}
+.fron-back li:nth-child(1){
+    left: -120px;
 }
