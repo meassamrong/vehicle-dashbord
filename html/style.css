@@ -12,7 +12,7 @@ body {
     width: 575px;
     height: 310px;
     border-radius: 20px;
-    background-color: #002a54;
+    background-color: #01152a;
     border: 2px solid #c4c4c4;
 }
 .content {
@@ -39,11 +39,40 @@ body {
     background-color: #000000;
     margin: auto;
     border-radius: 10px;
+
 }
 
+.side-memnu {
+    height: 100%;
+    width: 40px;
+    background-color: #8394a5b8;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    margin: 0px;
+}
 
+.side-memnu ul {
+    font-size: none;
+    margin: 0px;
+    padding: 0px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
 
+.side-memnu ul li {
+    list-style-type: none;
+    font-size: 25px;
+    cursor: pointer;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: #fffa50bf;
+    position: absolute;
+}
+.side-memnu ul li:hover {
+    color: #f3cf6cdc;
 
+}
 .car-img {
     position: absolute;
     right: 2%;
@@ -75,7 +104,7 @@ body {
 }
 .door li {
     list-style-type: none;
-    color: rgba(240, 255, 255, 0.418);
+    color: rgba(231, 252, 110, 0.507);
     display: inline-block;
     font-size: 25px;
     
@@ -84,7 +113,7 @@ body {
     cursor: pointer;
 }
 .door li i:hover {
-    color: rgba(240, 255, 255, 1);
+    color: rgba(234, 247, 162, 0.726);
     text-shadow: 0px 0px 20px #f2ff40;
 }
 .door-control .left li {
