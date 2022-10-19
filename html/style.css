@@ -14,6 +14,7 @@ body {
     border-radius: 20px;
     background-color: #01152a;
     border: 2px solid #c4c4c4;
+    z-index: -999;
 }
 .content {
     width: 100%;
@@ -44,34 +45,49 @@ body {
 
 .side-memnu {
     height: 100%;
-    width: 40px;
-    background-color: #8394a5b8;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
+    width: 450px;
+    background-color: #005c79;
+    border-top-left-radius: 18px;
+    border-bottom-left-radius: 18px;
     margin: 0px;
+    z-index: 99;
+    transition: all 250ms ease-in-out;
+    overflow: hidden;
 }
-
 .side-memnu ul {
-    font-size: none;
+    width: 25px;
+    height: 100%;
+    font-size: 0px;
     margin: 0px;
     padding: 0px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    float: right;
+    transform: translate(-22%);
+    border-left: solid 1px rgba(190, 190, 190, 0.527);
+    padding-left: 10px;
+
 }
 
 .side-memnu ul li {
     list-style-type: none;
-    font-size: 25px;
-    cursor: pointer;
     text-align: center;
     justify-content: center;
     align-items: center;
     color: #fffa50bf;
-    position: absolute;
-}
-.side-memnu ul li:hover {
-    color: #f3cf6cdc;
+    padding-top: 40px;
 
+}
+.side-memnu ul li i {
+    font-size: 25px;
+    cursor: pointer;
+    
+}
+.side-memnu ul li i:hover {
+    color: rgba(234, 247, 162, 0.726);
+    text-shadow: 0px 0px 20px #f2ff40;
+
+}
+#btnShow {
+    transition: all 500ms ease-in-out;
 }
 .car-img {
     position: absolute;
@@ -80,6 +96,7 @@ body {
     width: 350px;
     height: auto;
     transform: rotate(180deg);
+    z-index: -1;
 
 }
 .car-img img {
@@ -94,6 +111,7 @@ body {
     width: 350px;
     height: 180px;
     z-index: 99;
+    z-index: -1;
     
 }
 .door {

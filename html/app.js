@@ -1,3 +1,5 @@
+
+
 $(function() {
     /* open the UI for user */
     window.addEventListener('message', function(event) {
@@ -14,6 +16,24 @@ $(function() {
           $.post('http://vehcontrol/NUIFocusOff', JSON.stringify({}));
       }
   }
+  
+  var x = 0;
+$("#btnShow").click(
+  function() { 
+    if(x == 0){
+      $(".side-memnu").css('width', '450px');
+      $("#btnShow").css('transform', 'scaleX(-1)')
+      x++;
+    }else if(x == 1){
+      $(".side-memnu").css('width', '40px');
+      $("#btnShow").css('transform', 'scaleX(1)')
+      x = 0;
+    }
+  });
+
+
+
+
 
   $('#ignition').click(function(){
     $.post('http://vehcontrol/ignition', JSON.stringify({}));
@@ -103,3 +123,4 @@ $(function() {
       door: 3
     }));
   })
+  
