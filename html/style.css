@@ -154,3 +154,52 @@ body {
 .fron-back li:nth-child(1){
     left: -120px;
 }
+
+
+/* content-sidebar */
+.music-thum {
+    width: 405px;
+    height: 60%;
+    background-color:rgba(255, 255, 255, 0.5);
+    border-radius:5px;
+}
+.music-thum img {
+    height: 200px;
+    width: 100%;
+    border-radius:5px;
+}
+.form-inserturl {
+    width: 300px;
+    height: 25px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.5);
+    font-size: 20px;
+    transform: translate(19%, 24%);
+}
+.form-inserturl:focus {
+    outline: none;
+}
+.music-controler {
+    
+}
+.music-controler ul {
+    margin: 0px;
+    padding: 0px;
+    width: 300px;
+    height: 20px;
+    border: none;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 0px;
+}
+.music-controler ul li {
+    display: inline-block;
+    padding: 0px;
+    margin: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.music-controler ul li i {
+    font-size: 35px;
+}
